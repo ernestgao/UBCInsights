@@ -1,0 +1,38 @@
+{
+	"title": "reference Only one database",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"AND": [
+						{
+							"GT": {
+								"ubc1_avg": 90
+							}
+						},
+						{
+							"IS": {
+								"ubc1_dept": "adhe"
+							}
+						}
+					]
+				},
+				{
+					"EQ": {
+						"ubc1_avg": 95
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"ubc1_dept",
+				"ubc1_id",
+				"ubc1_avg"
+			],
+			"ORDER": "ubc1_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

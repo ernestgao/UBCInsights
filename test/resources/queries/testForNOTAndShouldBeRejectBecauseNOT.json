@@ -1,0 +1,20 @@
+{
+	"title": "TestForNOTAndShouldBeRejectBecauseNOT",
+	"input": {
+		"WHERE": {
+			"NOT": {
+				"GT": {},
+				"LT": {
+					"sections_avg": 97
+				}
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

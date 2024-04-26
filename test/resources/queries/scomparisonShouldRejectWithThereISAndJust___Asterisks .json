@@ -1,0 +1,33 @@
+{
+	"title": "Scomparison should reject with there IS and just ***",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"sections_dept": "***"
+					}
+				},
+				{
+					"LT": {
+						"sections_avg": 100
+					}
+				},
+				{
+					"GT": {
+						"sections_avg": 97
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg",
+				"sections_fail",
+				"sections_year"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

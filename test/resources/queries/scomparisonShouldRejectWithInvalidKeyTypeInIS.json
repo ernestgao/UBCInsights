@@ -1,0 +1,26 @@
+{
+	"title": "Scomparison should reject with Invalid key type in IS",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"sections_avg": 1
+					}
+				},
+				{
+					"LT": {
+						"sections_avg": 65
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,17 @@
+{
+	"title": "Referenced dataset cannot be empty string",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

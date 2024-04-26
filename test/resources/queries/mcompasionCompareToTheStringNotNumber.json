@@ -1,0 +1,19 @@
+{
+	"title": "Mcompasion compare to the string not number",
+	"input": {
+		"WHERE": {
+			"NOT": {
+				"LT": {
+					"sections_year": "string"
+				}
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}
